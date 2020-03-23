@@ -9,7 +9,10 @@ export const Control = ({ activeStatus, handleReset }) => {
     <div className="controls-wrapper">
         <div id="start-wrapper">
             <div id="start-header-wrapper">
-                <span id="start-title">PLAY</span>
+            {
+                !active ? <span id="start-title">PLAY</span>
+                : <span id="start-title">PAUSE</span>
+            }
             </div>
             <div id="start-icon">
                 {
